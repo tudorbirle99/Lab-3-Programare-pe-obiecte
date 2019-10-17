@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+class Dreptunghi {
+public:
+ int latime, inaltime;
+
+ void seteaza_valoare (int a, int b)
+ { latime=a; inaltime=b; }
+  int aria(void)
+ { return latime*inaltime;}
+ int perimetru(void)
+ { return 2*inaltime+2*latime;}
+};
+int main()
+{
+    int b,i;
+ Dreptunghi drpt;
+
+ cout<<"Introduceti latimea si inaltimea paralelogramului:";
+ cin>>b>>i;
+ drpt.seteaza_valoare (b,i);
+
+ cout<<"Aria dreptunghiului "<<drpt.aria()<<endl;
+ cout<<"Perimetrul dreptunghiului este:"<<drpt.perimetru()<<endl;
+
+    return 0;
+}
